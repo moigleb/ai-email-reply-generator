@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "moduleResolution": "node16", // Потрібно для роботи з ESM та CommonJS
+    "module": "Node16", // Встановлює модуль Node16 для сумісності з moduleResolution
+    "allowSyntheticDefaultImports": true, // Дозволяє імпортувати за замовчуванням навіть в ESM модулях
+    "types": ["node"], // Додає типи Node.js для доступу до глобальних об'єктів
+    "skipLibCheck": true, // Оминає перевірку типів у бібліотеках,
+    "baseUrl": ".", // Встановлює базовий шлях для відносних імпортів
+    "paths": {
+      "*": ["*"]
+    },
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "rootDir": "./"
+  },
+  "include": ["api/**/*.ts"]
+}
